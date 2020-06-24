@@ -8,7 +8,7 @@ Go to `Atom > Preferences > Install` and then search for `nhsuk design system sn
 After installing the package, you will need to restart Atom.
 
 ## Dependencies
-Using this package depends on the installation of the [NHS.UK Frontend](https://www.npmjs.com/package/govuk-frontend) and [Nunjucks](https://www.npmjs.com/package/nunjucks) into your project.
+Using this package depends on the installation of the [NHS.UK Frontend](https://www.npmjs.com/package/nhsuk-frontend) and [Nunjucks](https://www.npmjs.com/package/nunjucks) into your project.
 
 ## Support
 This repository is maintained by Simon Whatley. If you’ve got a question or need support you can:
