@@ -1,0 +1,140 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Details':
+    'leftLabel': 'NHS.UK'
+    'description': 'Details – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/details'
+    'prefix': 'nhsuk-details'
+    'body': """
+    {{ details({
+      summaryText: "${1:Summary text}",
+      text: "${2:Text}"
+    }) }}$3
+    """
+  'Inset text':
+    'leftLabel': 'NHS.UK'
+    'description': 'Inset text – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/inset-text'
+    'prefix': 'nhsuk-inset-text'
+    'body': """
+    {{ insetText({
+      text: "${1:Text}"
+    }) }}$2
+    """
+  'Summary list':
+    'leftLabel': 'NHS.UK'
+    'description': 'Summary list – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/summary-list'
+    'prefix': 'nhsuk-summary-list'
+    'body': """
+    {{ summaryList({
+      rows: [
+        {
+          key: {
+            text: "${1:Item label}"
+          },
+          value: {
+            text: "${2:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${3:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${1:Item label}"
+              }
+            ]
+          }
+        },
+        {
+          key: {
+            text: "${4:Item label}"
+          },
+          value: {
+            text: "${5:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${6:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${4:Item label}"
+              }
+            ]
+          }
+        },
+        {
+          key: {
+            text: "${7:Item label}"
+          },
+          value: {
+            text: "${8:Item value}"
+          },
+          actions: {
+            items: [
+              {
+                href: "${9:Item URL}",
+                text: "Change",
+                visuallyHiddenText: "${7:Item label}"
+              }
+            ]
+          }
+        }
+      ]
+    }) }}
+    """
+  'Table':
+    'leftLabel': 'NHS.UK'
+    'description': 'Table – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/table'
+    'prefix': 'nhsuk-table'
+    'body': """
+    {{ table({
+      caption: "${1:Caption text}",
+      firstCellIsHeader: ${2:false},
+      head: [
+        {
+          text: "Column 1 heading"
+        },
+        {
+          text: "Column 2 heading"
+        }
+      ],
+      rows: [
+        [
+          {
+            text: "Row 1, column 1"
+          },
+          {
+            text: "Row 1, column 2"
+          }
+        ],
+        [
+          {
+            text: "Row 2, column 1"
+          },
+          {
+            text: "Row 2, column 2"
+          }
+        ],
+        [
+          {
+            text: "Row 3, column 1"
+          },
+          {
+            text: "Row 3, column 2"
+          }
+        ]
+      ]
+    }) }}$3
+    """
+  'Warning callout':
+    'leftLabel': 'NHS.UK'
+    'description': 'Warning callout – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/warning-callout'
+    'prefix': 'nhsuk-warning-callout'
+    'body': """
+    {{ warningCallout({
+      heading: "${1:Warning heading}",
+      html: "${2:Warning text}"
+    }) }}$3
+    """

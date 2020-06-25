@@ -1,0 +1,53 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Back link':
+    'leftLabel': 'NHS.UK'
+    'description': 'Back link – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/back-link'
+    'prefix': 'nhsuk-back-link'
+    'body': """
+    {{ backLink({
+      text: "${1:Back}",
+      href: "${2:#}"
+    }) }}$3
+    """
+  'Breadcrumbs':
+    'leftLabel': 'NHS.UK'
+    'description': 'Breadcrumbs – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/breadcrumbs'
+    'prefix': 'nhsuk-breadcrumbs'
+    'body': """
+    {{ breadcrumbs({
+      items: [
+        ${1:Use nhsuk-link-item snippet}
+      ]
+    }) }}$3
+    """
+  'Footer':
+    'leftLabel': 'NHS.UK'
+    'description': 'Footer – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/footer'
+    'prefix': 'nhsuk-footer'
+    'body': """
+    {{ footer({}) }}$1
+    """
+  'Header':
+    'leftLabel': 'NHS.UK'
+    'description': 'Header – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/header'
+    'prefix': 'nhsuk-header'
+    'body': """
+    {{ header({
+      homepageUrl: "${1:#}"
+    }) }}$2
+    """
+  'Skip link':
+    'leftLabel': 'NHS.UK'
+    'description': 'Skip link – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/skip-link'
+    'prefix': 'nhsuk-skip-link'
+    'body': """
+    {{ skipLink({
+      text: "Skip to main content",
+      href: "#content"
+    }) }}$1
+    """

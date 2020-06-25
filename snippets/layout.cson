@@ -1,0 +1,122 @@
+'.text.html.basic, .text.html.nunjucks':  
+  'Form group':
+    'leftLabel': 'NHS.UK'
+    'description': 'Form group – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system'
+    'prefix': 'nhsuk-form-group'
+    'body': """
+    <div class="nhsuk-form-group">
+      $1
+    </div>$2
+    """
+  'Form section':
+    'leftLabel': 'NHS.UK'
+    'description': 'Form section – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system'
+    'prefix': 'nhsuk-form-section'
+    'body': """
+    <div class="nhsuk-form-section">
+      $1
+    </div>$2
+    """
+  'Grid row':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid row – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-row'
+    'body': """
+    <div class="nhsuk-grid-row">
+      $1
+    </div>$2
+    """
+  'Grid column':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column'
+    'body': """
+    {# Column size class suffixes: full, one-half, one-third, two-thirds, one-quarter #}
+    <div class="nhsuk-grid-column-${1:size}">
+      $2
+    </div>$3
+    """
+  'Grid column full':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column full width – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column-full'
+    'body': """
+    <div class="nhsuk-grid-column-full">
+      $1
+    </div>$2
+    """
+  'Grid column one-half':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column one-half width – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column-one-half'
+    'body': """
+    <div class="nhsuk-grid-column-one-half">
+      $1
+    </div>$2
+    """
+  'Grid column one-quarter':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column one-quarter width – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column-one-quarter'
+    'body': """
+    <div class="nhsuk-grid-column-one-quarter">
+      $1
+    </div>$2
+    """
+  'Grid column one-third':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column one-third width – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column-one-third'
+    'body': """
+    <div class="nhsuk-grid-column-one-third">
+      $1
+    </div>$2
+    """
+  'Grid column two-thirds':
+    'leftLabel': 'NHS.UK'
+    'description': 'Grid column two-thirds width – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-grid-column-two-thirds'
+    'body': """
+    <div class="nhsuk-grid-column-two-thirds">
+      $1
+    </div>$2
+    """
+  'Layout one-third / two-thirds':
+    'leftLabel': 'NHS.UK'
+    'description': 'Layout one-third / two-thirds columns – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-layout-one-third-two-thirds'
+    'body': """
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+        $1
+      </div>
+      <div class="nhsuk-grid-column-two-thirds">
+        $2
+      </div>
+    </div>$3
+    """
+  'Layout two-thirds / one-third':
+    'leftLabel': 'NHS.UK'
+    'description': 'Layout two-thirds / one-third columns – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/layout'
+    'prefix': 'nhsuk-layout-two-thirds-one-third'
+    'body': """
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        $1
+      </div>
+      <div class="nhsuk-grid-column-one-third">
+        $2
+      </div>
+    </div>$3
+    """

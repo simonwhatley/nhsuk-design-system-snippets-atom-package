@@ -1,0 +1,258 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Address':
+    'leftLabel': 'NHS.UK'
+    'description': 'Addresses – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system'
+    'prefix': 'nhsuk-address'
+    'body': """
+    {% call fieldset({
+      legend: {
+        text: "${1:What is your address?}",
+        classes: "nhsuk-fieldset__legend--${2:xl}",
+        isPageHeading: ${3:true}
+      }
+    }) %}
+
+      {{ input({
+        id: "address-line-1",
+        name: "address-line-1",
+        label: {
+          html: 'Building and street <span class="nhsuk-visually-hidden">line 1 of 2</span>'
+        },
+        autocomplete: "address-line1"
+      }) }}
+
+      {{ input({
+        id: "address-line-2",
+        name: "address-line-2",
+        label: {
+          html: '<span class="nhsuk-visually-hidden">Building and street line 2 of 2</span>'
+        },
+        autocomplete: "address-line1"
+      }) }}
+
+      {{ input({
+        id: "address-town",
+        name: "address-town",
+        label: {
+          text: "Town or city"
+        },
+        classes: "nhsuk-u-width-two-thirds",
+        autocomplete: "address-level2"
+      }) }}
+
+      {{ input({
+        id: "address-county",
+        name: "address-county",
+        label: {
+          text: "County"
+        },
+        classes: "nhsuk-u-width-two-thirds"
+      }) }}
+
+      {{ input({
+        id: "address-postcode",
+        name: "address-postcode",
+        label: {
+          text: "Postcode"
+        },
+        classes: "nhsuk-input--width-10",
+        autocomplete: "postal-code"
+      }) }}
+
+    {% endcall %}$4
+    """
+  'Button':
+    'leftLabel': 'NHS.UK'
+    'description': 'Button – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/button'
+    'prefix': 'nhsuk-button'
+    'body': """
+    {{ button({
+      text: "${1:Button text}"
+    }) }}$2
+    """
+  'Checkboxes':
+    'leftLabel': 'NHS.UK'
+    'description': 'Checkboxes – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/checkboxes'
+    'prefix': 'nhsuk-checkboxes'
+    'body': """
+    {{ checkboxes({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "nhsuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use nhsuk-option snippet}
+      ]
+    }) }}$7
+    """
+  'Checkbox or radio option':
+    'leftLabel': 'NHS.UK'
+    'description': 'Checkbox or radio option – NHS.UK Design System'
+    'prefix': 'nhsuk-option'
+    'body': """
+    {
+      value: "$1",
+      text: "$2",
+      checked: $3
+    }$4
+    """
+  'Date input':
+    'leftLabel': 'NHS.UK'
+    'description': 'Date input – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/date-input'
+    'prefix': 'nhsuk-date'
+    'body': """
+    {{ dateInput({
+      id: "${1:date}",
+      name: "${1:date}",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "nhsuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "${5:For example, 31 3 1980}"
+      },
+      items: [
+        {
+          name: "day",
+          classes: "nhsuk-input--width-2"
+        },
+        {
+          name: "month",
+          classes: "nhsuk-input--width-2"
+        },
+        {
+          name: "year",
+          classes: "nhsuk-input--width-4"
+        }
+      ]
+    }) }}$6
+    """
+  'Error summary':
+    'leftLabel': 'NHS.UK'
+    'description': 'Error summary – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/error-summary'
+    'prefix': 'nhsuk-error-summary'
+    'body': """
+    {{ errorSummary({
+      titleText: "${1:There is a problem}",
+      descriptionText: "${2:Describe the errors and how to correct them}"
+      errorList: [
+        ${3:Use nhsuk-link-item snippet}
+      ]
+    }) }}$4
+    """
+  'Form fieldset':
+    'leftLabel': 'NHS.UK'
+    'description': 'Form fieldset – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/fieldset'
+    'prefix': 'nhsuk-fieldset'
+    'body': """
+    {{ fieldset({
+      legend: {
+        text: "${1:Legend text}",
+        classes: "nhsuk-fieldset__legend--${2:xl|l|m}",
+        isPageHeading: ${3:true|false}
+      }
+    }) }}$4
+    """
+  'Radios':
+    'leftLabel': 'NHS.UK'
+    'description': 'Radios – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/radios'
+    'prefix': 'nhsuk-radios'
+    'body': """
+    {{ radios({
+      idPrefix: "$1",
+      name: "$1",
+      fieldset: {
+        legend: {
+          text: "${2:Legend text}",
+          isPageHeading: ${3:true},
+          classes: "nhsuk-fieldset__legend--${4:xl}"
+        }
+      },
+      hint: {
+        text: "$5"
+      },
+      items: [
+        ${6:Use nhsuk-option snippet}
+      ]
+    }) }}$7
+    """
+  'Select':
+    'leftLabel': 'NHS.UK'
+    'description': 'Select – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/select'
+    'prefix': 'nhsuk-select'
+    'body': """
+    {{ select({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      items: [
+        ${3:Use nhsuk-select-option snippet}
+      ]
+    }) }}$4
+    """
+  'Select option':
+    'leftLabel': 'NHS.UK'
+    'description': 'Select option – NHS.UK Design System'
+    'prefix': 'nhsuk-select-option'
+    'body': """
+    {
+      value: "$1",
+      text: "$2",
+      selected: $3
+    }$4
+    """
+  'Text input':
+    'leftLabel': 'NHS.UK'
+    'description': 'Text input – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/text-input'
+    'prefix': 'nhsuk-input'
+    'body': """
+    {{ input({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """
+  'Textarea':
+    'leftLabel': 'NHS.UK'
+    'description': 'Textarea – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/components/textarea'
+    'prefix': 'nhsuk-textarea'
+    'body': """
+    {{ textarea({
+      id: "$1",
+      name: "$1",
+      label: {
+        text: "${2:Label text}"
+      },
+      hint: {
+        text: "${3:Hint text}"
+      }
+    }) }}$4
+    """
