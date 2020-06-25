@@ -1,7 +1,7 @@
 {
   "name": "nhsuk-design-system-snippets",
   "description": "NHS.UK Design System snippets for Nunjucks by Simon Whatley",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "Simon Whatley",
     "email": "support@humanedesign.co"
