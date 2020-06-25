@@ -1,0 +1,154 @@
+'.text.html.basic, .text.html.nunjucks':
+  'Headings':
+    'leftLabel': 'NHS.UK'
+    'description': 'Headings – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#headings'
+    'prefix': 'nhsuk-heading'
+    'body': """
+    <h${1:1} class="nhsuk-heading-${2:xl|l|m}">
+      $3
+    </h${1:1}>$4
+    """
+  'Captions':
+    'leftLabel': 'NHS.UK'
+    'description': 'Captions – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography'
+    'prefix': 'nhsuk-caption'
+    'body': """
+    <span class="nhsuk-caption-${1:xl|l|m}">
+      $2
+    </span>$3
+    """
+  'Paragraph body':
+    'leftLabel': 'NHS.UK'
+    'description': 'Paragraph body – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#body'
+    'prefix': 'nhsuk-paragraph-body'
+    'body': """
+    <p class="nhsuk-body">
+      $1
+    <p>$2
+    """
+  'Paragraph body small':
+    'leftLabel': 'NHS.UK'
+    'description': 'Paragraph body small – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#body-small'
+    'prefix': 'nhsuk-paragraph-body-small'
+    'body': """
+    <p class="nhsuk-body-s">
+      $1
+    <p>$2
+    """
+  'Lead paragraph':
+    'leftLabel': 'NHS.UK'
+    'description': 'Lead paragraph – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#lead-paragraph'
+    'prefix': 'nhsuk-paragraph-lead'
+    'body': """
+    <p class="nhsuk-body-l">
+      $1
+    <p>$2
+      """
+  'Font size override':
+    'leftLabel': 'NHS.UK'
+    'description': 'Font size override – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#font-size'
+    'prefix': 'nhsuk-font-size'
+    'body': """
+    {# Font sizes: 80, 48, 36, 27, 24, 19, 16, 14 #}
+    <p class="nhsuk-body nhsuk-u-font-size-${1:size}">
+      $2
+    <p>$3
+    """
+  'Font weight override':
+    'leftLabel': 'NHS.UK'
+    'description': 'Font weight override – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#font-weight'
+    'prefix': 'nhsuk-font-weight'
+    'body': """
+    {# Font weights: regular, bold #}
+    <p class="nhsuk-body nhsuk-u-font-weight-${1:bold}">
+      $2
+    <p>$3
+    """
+  'Links':
+    'leftLabel': 'NHS.UK'
+    'description': 'Links – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#links'
+    'prefix': 'nhsuk-link'
+    'body': """
+    <a href="${1:#}">$2</a>$3
+    """
+  'Link item':
+    'leftLabel': 'NHS.UK'
+    'description': 'Link item – NHS.UK Design System'
+    'prefix': 'nhsuk-link-item'
+    'body': """
+    {
+      text: "$1",
+      href: "$2"
+    }$3
+    """
+  'Lists':
+    'leftLabel': 'NHS.UK'
+    'description': 'Lists – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#lists'
+    'prefix': 'nhsuk-list'
+    'body': """
+    <ul class="nhsuk-list">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Bulleted lists':
+    'leftLabel': 'NHS.UK'
+    'description': 'Bulleted lists – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#bulleted-lists'
+    'prefix': 'nhsuk-list-bulleted'
+    'body': """
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Numbered lists':
+    'leftLabel': 'NHS.UK'
+    'description': 'Numbered lists – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#numbered-lists'
+    'prefix': 'nhsuk-list-numbered'
+    'body': """
+    <ul class="nhsuk-list nhsuk-list--number">
+      <li>
+        ${1:List item}
+      </li>
+      <li>
+        ${2:List item}
+      </li>
+      <li>
+        ${3:List item}
+      </li>
+    </ul>$4
+    """
+  'Section break':
+    'leftLabel': 'NHS.UK'
+    'description': 'Section break – NHS.UK Design System'
+    'descriptionMoreURL': 'https://service-manual.nhs.uk/design-system/styles/typography#section-break'
+    'prefix': 'nhsuk-section-break'
+    'body': """
+    {# Size modifiers: xl, l, m #}
+    <hr class="nhsuk-section-break nhsuk-section-break--${1:size} nhsuk-section-break--visible">
+    """
